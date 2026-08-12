@@ -13,45 +13,45 @@ export const newsData: NewsItem[] = [
     "thumbnail": "/news/Eenadu Eetharam.jpg",
     "category": "Press",
     "date": "12/10/2015",
-    "title": "మల్టీ ప్లెక్స్‌లో సినిమా చూస్తూ ఇంటర్వెల్‌లో ఐస్‌క్రీం చదివింది వెంబీయే అయినా సంతోష్‌ వరముకుంది. మాత",
+    "title": "సరదాలు తీర్చే స్నేహితుడు",
     "publication": "Eenadu",
-    "description": "తినడం.” అందమైన సరస్సులో బోటు షికారు చేస్తూ చూర్ణం, హితులు కాషిక్‌భూపత్మి శివసంపత్స్‌ రాహుల్‌, కోహత్స్‌ కేరింతలు కొట్టడం... ఇవి మౌమూలు పిల్లలకు పెద్ద కోరిక వినయ్‌, రేవంత్‌, ప్టుఫ్వీతోపాటు మరి కొంత మంది తోడ్పాటుతో లేంకావు. అనాథ పిల్లలకు మాత్రం అందని (ద్రాక్ష. ఆ సులక్ష్య నివా (ప్రారంభించాడు. కంటెంట్‌ వ",
+    "description": "అనాథ పిల్లల చిన్న చిన్న కోరికలను తీరుస్తూ, వారి జీవితాల్లో ఆనందాన్ని నింపుతున్న హన్మకొండ యువకుడు మండువ సంతోష్ స్ఫూర్తిదాయక సేవానిరతి",
     "link": "/news/Eenadu Eetharam.jpg"
   },
   {
     "thumbnail": "/news/Sakshi Special Story.jpg",
     "category": "Press",
     "date": "15/04/2013",
-    "title": "లనీ వాటర్‌ ఫిల్టర్‌ మీరే. సో రోజులను వృద్ధాశ్ర చం ంాాయ సీం సహాకారంతో చర మంత్రు సో",
+    "title": "సులక్ష్యం",
     "publication": "Sakshi",
-    "description": "మలో కా. టా శ కరకమూలు చపుతున ఈ సులక్ష సభ్యల 488. అం 208 అమ తం హర్యకంల. మంట యాయ మరయ... ౨11105 క్‌ శ్‌ శ్రీనగర్‌ కాలనీకి చెందిన మండువ సంతోష్‌. రించారు, ఈ సంఘటన వారందరినీ ఆలో గణతంత్ర దినోత్సవాలు, పండుగలు, ప్రము క్ష శ్‌ ౧ న",
+    "description": "అనాథ పిల్లలకు, వృద్ధులకు చేయూతనందిస్తూ.. విద్యా సేవలు, దుప్పట్ల పంపిణీ మరియు వివిధ సామాజిక సేవా కార్యక్రమాల ద్వారా సమాజంలో మార్పు తెస్తున్న 'సులక్ష్య సేవా సమితి' విశేషాలపై 'సాక్షి' పత్రిక ప్రచురించిన ప్రత్యేక కథనం.",
     "link": "/news/Sakshi Special Story.jpg"
   },
   {
     "thumbnail": "/news/Hans India Special Story.jpg",
     "category": "Press",
     "date": "06/07/2014",
-    "title": "HANSPINDIA waraaaL | sunoay 6 uy 201: REGION",
+    "title": "Professionals come forward to help the underprivileged",
     "publication": "The Hans India",
-    "description": "Professionals come forward to help the underprivileged James Epwi [ix = 8 SPER A =",
+    "description": "An article highlighting how a group of eight young professionals in Warangal came together to form Sulakshya Seva Samithi. It details their journey of pooling personal savings to support old age homes, orphanages, and government schools through educational aid, furniture donations, and welfare activities.",
     "link": "/news/Hans India Special Story.jpg"
   },
   {
     "thumbnail": "/news/Eenadu Sulakshya Special Story.jpg",
     "category": "Press",
     "date": "08/04/2013",
-    "title": "“సుల వ్య ౨౨౨ ౨)",
+    "title": "ఈ తరం స్ఫూర్తి పయనం",
     "publication": "Eenadu",
-    "description": ") ర్తి సే ౧ క శల ౮ న్న \\\"టే టై! జ \\\"క క క కేక్‌, 2610 1౧",
+    "description": "ఆరుగురు పట్టభద్రులైన యువకులు కలసి 'సులక్ష్య సేవా సమితి'గా ఏర్పడి, హన్మకొండ మరియు వరంగల్ పరిసర ప్రాంతాల్లోని అనాథాశ్రమాలు, వృద్ధాశ్రమాలు మరియు ప్రభుత్వ పాఠశాలలకు వివిధ సేవా కార్యక్రమాల ద్వారా సాయమందిస్తున్న తీరుపై 'ఈనాడు' పత్రిక ప్రచురించిన ప్రత్యేక కథనం.",
     "link": "/news/Eenadu Sulakshya Special Story.jpg"
   },
   {
     "thumbnail": "/news/TNSE_VAN_HYD_17-04-2022-page-002.jpg",
     "category": "Press",
     "date": "17/04/2022",
-    "title": "— - — Gen",
+    "title": "An org that fills the lives of orphans, elderly with cheer",
     "publication": "The New Indian Express",
-    "description": "== - 4 2 y | p= WEE w 4 P ei ESSER 7 3 3k",
+    "description": "An article highlighting the philanthropic journey of Sulakshya Seva Samithi (SSS) led by Santhosh Manduva. It details how the organization brings joy to children in orphanages and residents in old-age homes through outings, educational support, health camps, and infrastructure donations, as well as founder Santhosh's memorable meeting with former President Dr. A.P.J. Abdul Kalam.",
     "link": "/news/TNSE_VAN_HYD_17-04-2022-page-002.jpg"
   },
   {
