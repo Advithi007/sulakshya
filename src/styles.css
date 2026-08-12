@@ -1,0 +1,194 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-brand: var(--brand);
+  --color-ink: var(--ink);
+  --color-cream: var(--cream);
+  --font-display: var(--font-display);
+  --font-sans: var(--font-body);
+
+  --animate-accordion-down: accordion-down 0.2s ease-out;
+  --animate-accordion-up: accordion-up 0.2s ease-out;
+
+  @keyframes accordion-down {
+    from { height: 0; }
+    to { height: var(--radix-accordion-content-height); }
+  }
+  @keyframes accordion-up {
+    from { height: var(--radix-accordion-content-height); }
+    to { height: 0; }
+  }
+}
+
+:root {
+  --radius: 1rem;
+
+  /* ── Warm ivory background ─────────────────────────── */
+  --background:  oklch(0.975 0.009 88);
+  --cream:       oklch(0.975 0.009 88);
+
+  /* ── Deep charcoal ink (softer than pure black) ────── */
+  --foreground:  oklch(0.20 0.018 255);
+  --ink:         oklch(0.20 0.018 255);
+
+  /* ── Vibrant amber-gold brand accent ───────────────── */
+  --brand:       oklch(0.80 0.18 75);
+
+  /* ── Cards & surfaces ──────────────────────────────── */
+  --card:              oklch(0.995 0.004 88);
+  --card-foreground:   oklch(0.20 0.018 255);
+  --popover:           oklch(0.995 0.004 88);
+  --popover-foreground: oklch(0.20 0.018 255);
+
+  /* ── Primaries (dark → light) ──────────────────────── */
+  --primary:           oklch(0.20 0.018 255);
+  --primary-foreground: oklch(0.975 0.009 88);
+
+  /* ── Secondary / muted tones ───────────────────────── */
+  --secondary:         oklch(0.94 0.016 85);
+  --secondary-foreground: oklch(0.20 0.018 255);
+  --muted:             oklch(0.93 0.012 85);
+  --muted-foreground:  oklch(0.48 0.016 250);
+
+  /* ── Accent (brand-tinted) ─────────────────────────── */
+  --accent:            oklch(0.80 0.18 75);
+  --accent-foreground: oklch(0.20 0.018 255);
+
+  /* ── Destructive ───────────────────────────────────── */
+  --destructive:            oklch(0.577 0.245 27.325);
+  --destructive-foreground: oklch(0.984 0.003 247.858);
+
+  /* ── Border / input ────────────────────────────────── */
+  --border: oklch(0.88 0.012 85);
+  --input:  oklch(0.88 0.012 85);
+  --ring:   oklch(0.80 0.18 75);
+
+  /* ── Typography ────────────────────────────────────── */
+  --font-display: 'Outfit', system-ui, sans-serif;
+  --font-body:    'Inter', system-ui, sans-serif;
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-body);
+    font-size: 1rem;
+    line-height: 1.7;
+    font-weight: 400;
+    letter-spacing: -0.005em;
+  }
+
+  h1, h2, h3, h4, h5, h6, .font-display {
+    font-family: var(--font-display);
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    line-height: 1.05;
+  }
+
+  /* Smooth transitions on interactive elements */
+  a, button {
+    transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease, opacity 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  /* Subtle link hover lift on nav items */
+  a:hover {
+    text-decoration: none;
+  }
+
+  /* Selection highlight in brand color */
+  ::selection {
+    background-color: oklch(0.80 0.18 75 / 0.35);
+    color: oklch(0.20 0.018 255);
+  }
+}
+
+/* ── Marquee ─────────────────────────────────────── */
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+.animate-marquee { animation: marquee 30s linear infinite; }
+
+/* ── Subtle image zoom on hover (gallery cards etc.) */
+.img-zoom img {
+  transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.img-zoom:hover img { transform: scale(1.06); }
+
+/* ── Card lift effect ────────────────────────────── */
+.card-lift {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.card-lift:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px -12px oklch(0.20 0.018 255 / 0.15);
+}
+
+/* ── Gradient text utility ───────────────────────── */
+.text-gradient {
+  background: linear-gradient(135deg, oklch(0.80 0.18 75), oklch(0.70 0.20 60));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ── Masonry Grid Utility ────────────────────────── */
+.masonry-grid {
+  column-count: 3;
+  column-gap: 1.5rem;
+}
+@media (max-w-1024px) {
+  .masonry-grid {
+    column-count: 2;
+  }
+}
+@media (max-w-640px) {
+  .masonry-grid {
+    column-count: 1;
+  }
+}
+.masonry-item {
+  break-inside: avoid;
+  margin-bottom: 1.5rem;
+}
+
